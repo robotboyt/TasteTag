@@ -1,0 +1,43 @@
+.navbar {
+  width: 100vw;
+  height: 7vh;
+  background-color: white;
+}
+
+ul {
+  display: flex;
+  place-items: center;
+  height: 100%;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  color: #213547;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+ul li a:hover {
+  color: #747bff;
+}
+
+@media (prefers-color-scheme: light) {
+  .navbar {
+    color: white;
+    background-color: #213547;
+  }
+  ul li a {
+    color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
