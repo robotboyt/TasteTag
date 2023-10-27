@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className={styles.navbar}>
+      <div className={styles.logo}>
+        <h2>TasteTag</h2>
+      </div>
       <ul>
         <li>
           <Link to="/">Home</Link>

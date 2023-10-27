@@ -1,17 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+
 .navbar {
   width: 100vw;
   height: 7vh;
   background-color: white;
+  display: flex;
+}
+
+.logo {
+  width: 10%;
+  display: flex;
+  place-items: center;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 ul {
   display: flex;
   place-items: center;
+  width: 90%;
   height: 100%;
   padding: 0;
 }
 ul li {
   list-style: none;
+  display: flex;
 }
 
 ul li a {
