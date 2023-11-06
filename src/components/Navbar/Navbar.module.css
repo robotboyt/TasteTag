@@ -5,6 +5,8 @@
   height: 7vh;
   background-color: white;
   display: flex;
+  position: fixed;
+  margin-bottom: 100px;
 }
 
 .logo {
@@ -14,6 +16,7 @@
   font-family: "Titillium Web", sans-serif;
   font-weight: bold;
   letter-spacing: 2px;
+  color: #213547;
 }
 
 ul {
@@ -43,6 +46,9 @@ ul li a:hover {
   .navbar {
     color: white;
     background-color: #213547;
+  }
+  .logo {
+    color: white;
   }
   ul li a {
     color: #ffffff;

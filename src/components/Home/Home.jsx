@@ -3,6 +3,7 @@ import { QRCodeCanvas } from "qrcode.react";
 
 const Home = () => {
   const [qrcode, setQrcode] = useState(false);
+  const [url, setUrl] = useState(null);
 
   const getQrCode = () => {
     setQrcode(!qrcode);
@@ -12,10 +13,13 @@ const Home = () => {
     <div>
       Home
       <div>
+        <input
+          type="text"
+          onChange={(e) => setUrl(e.target.value)}
+          value={url}
+        />
         <button onClick={getQrCode}>get qr</button>
-        {qrcode ? (
-          <QRCodeCanvas level="H" size={200} value="http://localhost:5173/" />
-        ) : null}
+        {qrcode ? <QRCodeCanvas level="H" size={200} value={url} /> : null}
       </div>
     </div>
   );
